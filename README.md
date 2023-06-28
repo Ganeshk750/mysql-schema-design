@@ -1,5 +1,6 @@
 # mysql-schema-design
 e-commerce Database in MySQL — schema
+![Alt text](https://github.com/Ganeshk750/mysql-schema-design/blob/master/table-pic.PNG)
 #### CREATE TABLE 
 ````
 CREATE TABLE employee (
