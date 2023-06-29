@@ -39,7 +39,7 @@ DROP COLUMN column_name
 * Data definition language (DDL) is the subset of the database which defines the data structure of the database in the initial stage when the database is about to be created. It consists of the following commands: CREATE, ALTER and DELETE database objects such as schema, tables, view, sequence, etc.
 
 #### What is a Data Manipulation Language?
-*Data manipulation language makes the user able to retrieve and manipulate data. It is used to perform the following operations.
+* Data manipulation language makes the user able to retrieve and manipulate data. It is used to perform the following operations.
 
 Insert data into database through INSERT command.
 Retrieve data from the database through SELECT command.
