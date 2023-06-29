@@ -27,3 +27,13 @@ ALTER TABLE table_name
 DROP COLUMN column_name
 
 ````
+#### DML (Data Manipulation Language): 
+* These statements are used to manipulate the data in records. Commonly used DML statements are **Insert, Update, and Delete.**
+
+* The **Select statement** is used as partial DML statement that is used to select all or relevant records in the table.
+
+#### DCL (Data Control Language): 
+* These statements are used to set privileges such as Grant and Revoke database access permission to the specific user.
+
+## What is a Data Definition Language?
+* Data definition language (DDL) is the subset of the database which defines the data structure of the database in the initial stage when the database is about to be created. It consists of the following commands: CREATE, ALTER and DELETE database objects such as schema, tables, view, sequence, etc.
