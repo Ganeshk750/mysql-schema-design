@@ -73,4 +73,19 @@ REVOKE: to cancel previously denied or granted permissions.
 * If we don't use any of the above, then we cannot delete data from the main table for which data in child table exists. We will get an error if we try to do so.
 
 **ERROR : Record in child table exist**
-  
+
+### DROP TABLE :
+* The **DROP TABLE** command deletes a table in the database.
+
+* The following SQL deletes the table "Shippers":
+**DROP TABLE Shippers;**
+
+### TRUNCATE TABLE:
+* The **TRUNCATE TABLE** command deletes the data inside a table, but not the table itself.
+
+* The following SQL truncates the table "Categories": 
+**TRUNCATE TABLE Categories;**
+
+### Delete Table:
+* The DELETE Statement is used to delete rows from a table.
+* **NOTE:** The WHERE clause in the sql delete command is optional and it identifies the rows in the column that gets deleted. If you do not include the WHERE clause all the rows in the table is deleted, so be careful while writing a DELETE query without WHERE clause.
