@@ -25,3 +25,18 @@
 Delete command is used to delete a row in a table	| Truncate is used to delete all the rows from a table
 You can rollback data after using delete statement	| You cannot rollback data
 It is a DML command	| It is a DDL command
+
+**3) What is an Index?**
+
+* An index is performance tuning method of allowing faster retrieval of records from the table. An index creates an entry for each value and it will be faster to retrieve data.
+
+* There are three types of indexes -.
+
+**Unique Index:**
+* This indexing does not allow the field to have duplicate values if the column is unique indexed. Unique index can be applied automatically when primary key is defined.
+
+**Clustered Index:**
+* This type of index reorders the physical order of the table and search based on the key values. Each table can have only one clustered index.
+
+**NonClustered Index:**
+* NonClustered Index does not alter the physical order of the table and maintains logical order of data. Each table can have 999 nonclustered indexes.  
