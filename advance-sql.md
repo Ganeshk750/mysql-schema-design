@@ -48,3 +48,12 @@ It is a DML command	| It is a DDL command
 * **Note:** Updating a table with indexes takes more time than updating a table without (because the indexes also need an update). So, only create indexes on columns that will be frequently searched against.
 
 * Creates an index on a table. Duplicate values are allowed.
+```SQL
+CREATE INDEX index_name ON table_name (column1, column2, ...);
+```
+
+* Creates a unique index on a table. Duplicate values are not allowed.
+
+```SQL
+CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
+```
