@@ -77,3 +77,33 @@ CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
 ![img_innerjoin](https://www.w3schools.com/sql/img_innerjoin.gif "img_innerjoin")![img_leftjoin](https://www.w3schools.com/sql/img_leftjoin.gif "img_leftjoin")
 ![img_rightjoin](https://www.w3schools.com/sql/img_rightjoin.gif "img_rightjoin")
 ![img_fulljoin](https://www.w3schools.com/sql/img_fulljoin.gif "img_fulljoin")
+
+**Consider the two tables below:**
+
+* **Student Table**
+
+![table1-3](https://media.geeksforgeeks.org/wp-content/cdn-uploads/table1-3.png "table1-3")
+
+* **StudentCourse Table**
+
+![table5](https://media.geeksforgeeks.org/wp-content/uploads/table5.png "table5")
+
+* **The simplest Join is INNER JOIN.**
+
+**1) INNER JOIN:** The INNER JOIN keyword selects all rows from both the tables as long as the condition satisfies. This keyword will create the result-set by combining all rows from both the tables where the condition satisfies i.e value of the common field will be same.
+
+* **Syntax:**
+
+```SQL
+SELECT table1.column1,table1.column2,table2.column1,....
+FROM table1 
+INNER JOIN table2
+ON table1.matching_column = table2.matching_column;
+```
+>table1: First table.
+table2: Second table
+matching_column: Column common to both the tables.
+
+* Note: We can also write JOIN instead of INNER JOIN. JOIN is same as INNER JOIN.
+
+![6a0120a85dcdae970b012877702708970c-pi](https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b012877702708970c-pi.png "6a0120a85dcdae970b012877702708970c-pi")
