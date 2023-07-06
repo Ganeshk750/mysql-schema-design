@@ -57,3 +57,23 @@ CREATE INDEX index_name ON table_name (column1, column2, ...);
 ```SQL
 CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
 ```
+## SQL Joins
+
+**SQL JOIN :**
+* A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+### Different Types of SQL JOINs 
+
+* Here are the different types of the JOINs in SQL:
+
+**1) (INNER) JOIN:** Returns records that have matching values in both tables
+
+**2) LEFT (OUTER) JOIN:** Returns all records from the left table, and the matched records from the right table
+
+**3) RIGHT (OUTER) JOIN:** Returns all records from the right table, and the matched records from the left table
+
+**4) FULL (OUTER) JOIN:** Returns all records when there is a match in either left or right table
+
+
+![img_innerjoin](https://www.w3schools.com/sql/img_innerjoin.gif "img_innerjoin")![img_leftjoin](https://www.w3schools.com/sql/img_leftjoin.gif "img_leftjoin")
+![img_rightjoin](https://www.w3schools.com/sql/img_rightjoin.gif "img_rightjoin")
+![img_fulljoin](https://www.w3schools.com/sql/img_fulljoin.gif "img_fulljoin")
