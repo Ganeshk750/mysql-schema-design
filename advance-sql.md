@@ -222,4 +222,6 @@ FROM Student
 FULL JOIN StudentCourse 
 ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 ```
+#### Output:
 
+![table7](https://media.geeksforgeeks.org/wp-content/uploads/table7.png "table7")
