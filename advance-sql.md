@@ -195,4 +195,31 @@ ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 
 #### Output:
 
-![table6](https://media.geeksforgeeks.org/wp-content/uploads/table6.png "table6")
+![table6](https://media.geeksforgeeks.org/wp-content/uploads/table6.png "table6
+
+**4) FULL JOIN:** FULL JOIN creates the result-set by combining result of both LEFT JOIN and RIGHT JOIN. The result-set will contain all the rows from both the tables. The rows for which there is no matching, the result-set will contain NULL values.
+
+* **Syntax:**
+
+```SQL
+SELECT table1.column1,table1.column2,table2.column1,....
+FROM table1 
+FULL JOIN table2
+ON table1.matching_column = table2.matching_column;
+```
+
+>table1: First table.
+table2: Second table
+matching_column: Column common to both the tables.
+
+![3Ll1h](https://i.stack.imgur.com/3Ll1h.png "3Ll1h")
+
+#### Example Queries(FULL JOIN):
+
+```SQL
+SELECT Student.NAME,StudentCourse.COURSE_ID 
+FROM Student
+FULL JOIN StudentCourse 
+ON StudentCourse.ROLL_NO = Student.ROLL_NO;
+```
+
