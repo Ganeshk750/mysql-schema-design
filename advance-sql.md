@@ -225,3 +225,30 @@ ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 #### Output:
 
 ![table7](https://media.geeksforgeeks.org/wp-content/uploads/table7.png "table7")
+
+# SQL | Join (Cartesian Join & Self Join)
+
+* In this article, we will discuss about the remaining two JOINS:
+
+### CARTESIAN JOIN
+#### SELF JOIN
+
+* Consider the two tables below:
+
+![table2](https://media.geeksforgeeks.org/wp-content/cdn-uploads/table2.jpg "table2")
+
+
+![table51](https://media.geeksforgeeks.org/wp-content/uploads/table51.png "table51")
+
+**5) CARTESIAN JOIN:** The CARTESIAN JOIN is also known as CROSS JOIN. In a CARTESIAN JOIN there is a join for each row of one table to every row of another table. This usually happens when the matching column or WHERE condition is not specified.
+In the absence of a WHERE condition the CARTESIAN JOIN will behave like a CARTESIAN PRODUCT . i.e., the number of rows in the result-set is the product of the number of rows of the two tables.
+
+* In the presence of WHERE condition this JOIN will function like a INNER JOIN.
+* Generally speaking, Cross join is similar to an inner join where the join-condition will always evaluate to True
+
+* **Syntax:**
+```SQL
+SELECT table1.column1 , table1.column2, table2.column1...
+FROM table1
+CROSS JOIN table2;
+```
