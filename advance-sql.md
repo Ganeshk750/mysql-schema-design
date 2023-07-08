@@ -226,7 +226,7 @@ ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 
 ![table7](https://media.geeksforgeeks.org/wp-content/uploads/table7.png "table7")
 
-# SQL | Join (Cartesian Join & Self Join)
+## SQL | Join (Cartesian Join & Self Join)
 
 * In this article, we will discuss about the remaining two JOINS:
 
@@ -252,3 +252,14 @@ SELECT table1.column1 , table1.column2, table2.column1...
 FROM table1
 CROSS JOIN table2;
 ```
+##### Example Queries(CARTESIAN JOIN):
+
+* In the below query we will select NAME and Age from Student table and COURSE_ID from StudentCourse table. In the output you can see that each row of the table Student is joined with every row of the table StudentCourse. The total rows in the result-set = 4 * 4 = 16.
+```SQL
+SELECT Student.NAME, Student.AGE, StudentCourse.COURSE_ID
+FROM Student
+CROSS JOIN StudentCourse;
+```
+#### Output:
+
+![table_final](https://media.geeksforgeeks.org/wp-content/uploads/table_final.png "table_final")
