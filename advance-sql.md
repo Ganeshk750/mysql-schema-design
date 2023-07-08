@@ -263,3 +263,25 @@ CROSS JOIN StudentCourse;
 #### Output:
 
 ![table_final](https://media.geeksforgeeks.org/wp-content/uploads/table_final.png "table_final")
+
+**6) SELF JOIN:** As the name signifies, in SELF JOIN a table is joined to itself. That is, each row of the table is joined with itself and all other rows depending on some conditions. In other words we can say that it is a join between two copies of the same table.
+
+* **Syntax:**
+```SQL
+SELECT a.coulmn1 , b.column2
+FROM table_name a, table_name b
+WHERE some_condition;
+
+table_name: Name of the table.
+some_condition: Condition for selecting the rows.
+```
+
+#### Example Queries(SELF JOIN):
+```SQL
+SELECT a.ROLL_NO , b.NAME
+FROM Student a, Student b
+WHERE a.ROLL_NO < b.ROLL_NO;
+```
+#### Output:
+
+![tableeee1](https://media.geeksforgeeks.org/wp-content/uploads/tableeee1.png "tableeee1")
