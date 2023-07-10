@@ -300,3 +300,62 @@ Praveen | BLR | 777654321 | 88340
 Vamshi | BLR | 123456 | 68340
 Vamshi| BLR | 123456 | 48340
 Sheshu | BLR | 123456 | 78340
+
+* **Query for Max salary**
+```SQL
+ select max(salary) from employee;
+```
+* **out put : 96000**
+
+* **Query for Max salary with employee name**
+
+```SQL
+select name, salary from employee where salary = (select max(salary) from employee);
+```
+
+* **out put : Mehar 96000**
+
+* **Query for Min salary with employee name**
+
+```SQL
+select name, salary from employee where salary = (select min(salary) from employee);
+```
+
+* **out put : Vamshi 48340**
+
+* **Query for 2nd Max salary**
+
+```SQL
+select max(salary) from employee where salary not in (select max(salary) from employee);
+```
+
+ ###### OR
+
+```SQL
+SELECT MAX(Salary) From Employee WHERE Salary < ( SELECT Max(Salary) FROM Employee);
+```
+
+* **out put :  88340**
+
+
+### Nth salary with other fields
+
+```SQL
+select name, salary from employee a where n-1 = (select count(salary)from employee b where a.salary<b.salary);
+```
+
+* Here you need to replace n value of the salary (2nd salary n=2, if 3rd highest salary n=3..etc)
+
+
+```SQL
+select name, salary from employee a where 2-1 = (select count(salary)from employee b where a.salary<b.salary);
+```
+
+**OR**
+
+```SQL
+SELECT name, Salary FROM Employee e WHERE 2=(SELECT COUNT(DISTINCT Salary) FROM Employee p WHERE e.Salary<=p.Salary);
+```
+
+##### Output: Praveen 88340
+
