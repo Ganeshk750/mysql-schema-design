@@ -285,3 +285,18 @@ WHERE a.ROLL_NO < b.ROLL_NO;
 #### Output:
 
 ![tableeee1](https://media.geeksforgeeks.org/wp-content/uploads/tableeee1.png "tableeee1")
+
+### SQL Queries On Salary
+
+* **employee table**
+
+**Name** |**Address**| **Phone**|**Salary**
+------------ | ------------- | ------------- | -------------
+Mehar | BLR | 123456 | 96000
+Suresh | BLR | 987654321 | 85000
+Praveen | BLR | 777654321 | 86000
+Praveen | BLR | 777654321 | 88000
+Praveen | BLR | 777654321 | 88340
+Vamshi | BLR | 123456 | 68340
+Vamshi| BLR | 123456 | 48340
+Sheshu | BLR | 123456 | 78340
