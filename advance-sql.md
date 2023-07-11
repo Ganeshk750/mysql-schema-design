@@ -417,3 +417,19 @@ DELETE table-name
  WHERE UnitPrice > 50
  
 ```
+**2. SQL ORDER BY Clause:** 
+
+* SELECT returns records in no particular order.
+* To ensure a specific order use the ORDER BY clause.
+* ORDER BY allows sorting by one or more columns.
+* Records can be returned in ascending or descending order.
+
+**Syntax:**
+
+```SQL
+SELECT column-names
+  FROM table-name
+ WHERE condition
+ ORDER BY column-names
+ ```
+ * Default order of "ORDER BY" is ASC
