@@ -359,3 +359,14 @@ SELECT name, Salary FROM Employee e WHERE 2=(SELECT COUNT(DISTINCT Salary) FROM 
 
 ##### Output: Praveen 88340
 
+**4) What are different Clauses used in SQL?**
+
+
+
+![dbms-sql-clauses](https://static.javatpoint.com/dbms/images/dbms-sql-clauses.png "dbms-sql-clauses")
+
+#### Order of clauses while writing select queries:
+
+![Select-Statement-Execution](https://i0.wp.com/www.complexsql.com/wp-content/uploads/2017/02/Select-Statement-Execution.png?w=548&ssl=1 "Select-Statement-Execution") 
+
+
