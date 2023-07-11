@@ -379,3 +379,15 @@ SELECT name, Salary FROM Employee e WHERE 2=(SELECT COUNT(DISTINCT Salary) FROM 
 **Syntax :**
 
 * A WHERE clause with a SELECT statement:
+```SQL
+SELECT column-names
+  FROM table-name
+ WHERE condition
+ 
+ Example:
+ 
+ SELECT Id, FirstName, LastName, City, Country, Phone
+  FROM Customer
+ WHERE Country = 'Sweden'
+ 
+ ```
