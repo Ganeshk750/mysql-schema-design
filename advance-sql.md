@@ -405,3 +405,15 @@ UPDATE table-name
  WHERE Name = 'Pavlova, Ltd.'
  
 ```
+* A WHERE clause with a DELETE statement:
+
+```SQL
+DELETE table-name
+ WHERE condition
+ 
+ Example: 
+ 
+ DELETE FROM Product
+ WHERE UnitPrice > 50
+ 
+```
