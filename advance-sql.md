@@ -369,4 +369,13 @@ SELECT name, Salary FROM Employee e WHERE 2=(SELECT COUNT(DISTINCT Salary) FROM 
 
 ![Select-Statement-Execution](https://i0.wp.com/www.complexsql.com/wp-content/uploads/2017/02/Select-Statement-Execution.png?w=548&ssl=1 "Select-Statement-Execution") 
 
+**1. The SQL WHERE Clause:**
 
+* To limit the number of rows use the WHERE clause.
+* The WHERE clause filters for rows that meet certain criteria.
+* WHERE is followed by a condition that returns either true or false.
+* WHERE is used with SELECT, UPDATE, and DELETE.
+
+**Syntax :**
+
+* A WHERE clause with a SELECT statement:
