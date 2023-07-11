@@ -391,3 +391,17 @@ SELECT column-names
  WHERE Country = 'Sweden'
  
  ```
+ * A WHERE clause with an UPDATE statement:
+
+```SQL
+UPDATE table-name
+   SET column-name = value
+ WHERE condition
+ 
+ Example :
+ 
+ UPDATE Supplier
+   SET City = 'Sydney'
+ WHERE Name = 'Pavlova, Ltd.'
+ 
+```
