@@ -444,3 +444,24 @@ SELECT column-names
 * GROUP BY typically also involves aggregates: COUNT, MAX, SUM, AVG, etc.
 * GROUP BY can group by one or more columns.
 
+**Syntax:**
+
+```SQL
+SELECT column-names
+  FROM table-name
+ WHERE condition
+ GROUP BY column-names
+ 
+(OR)With Order By
+ 
+ SELECT column-names
+  FROM table-name
+ WHERE condition
+ GROUP BY column-names
+ ORDER BY column-names
+ 
+```
+
+* The following SQL statement lists the number of customers in each country:
+
+Ref Link :https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_groupby
