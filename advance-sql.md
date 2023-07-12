@@ -433,3 +433,14 @@ SELECT column-names
  ORDER BY column-names
  ```
  * Default order of "ORDER BY" is ASC
+**3. SQL GROUP BY Clause**
+
+* The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country".
+
+* The GROUP BY statement is often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.
+
+* The GROUP BY clause groups records into summary rows.
+* GROUP BY returns one records for each group.
+* GROUP BY typically also involves aggregates: COUNT, MAX, SUM, AVG, etc.
+* GROUP BY can group by one or more columns.
+
