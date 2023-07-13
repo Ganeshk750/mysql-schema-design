@@ -498,3 +498,13 @@ Result: https://www.dofactory.com/sql/having
 HAVING AVG(TotalAmount) BETWEEN 1000 AND 1200
 ```
 Result: https://www.dofactory.com/sql/having
+
+* **list out the employees name and whos salary is more than avg of employee's salary**
+
+```SQL
+select employeeId, employeeName 
+from employee  
+where salary <(select avg(salary)from employee)
+group by employeeId, employeeName 
+Order by employeeName;
+```
