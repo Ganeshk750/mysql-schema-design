@@ -490,3 +490,11 @@ HAVING COUNT(Id) >= 9
  ORDER BY COUNT(Id) DESC
  ```
 Result: https://www.dofactory.com/sql/having
+
+ ```SQL
+ SELECT AVG(TotalAmount), FirstName, LastName
+  FROM [Order] O JOIN Customer C ON O.CustomerId = C.Id
+ GROUP BY FirstName, LastName
+HAVING AVG(TotalAmount) BETWEEN 1000 AND 1200
+```
+Result: https://www.dofactory.com/sql/having
