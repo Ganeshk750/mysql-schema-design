@@ -465,3 +465,15 @@ SELECT column-names
 * The following SQL statement lists the number of customers in each country:
 
 Ref Link :https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_groupby
+
+* **The following SQL statement lists the number of customers in each country, 
+    sorted high to low (Only include countries with more than 5 customers):**
+
+```SQL
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5
+ORDER BY COUNT(CustomerID) DESC;
+```
+Result : https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_having_orderby
